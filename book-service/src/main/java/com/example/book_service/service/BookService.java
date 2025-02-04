@@ -16,4 +16,6 @@ public interface BookService {
     
     public void borrowBook(Long id);
 
+    public boolean isAvailable(Long id);
+
 }

@@ -33,8 +33,14 @@ public class BookServiceimpl implements BookService {
     }
 
     public void borrowBook(Long id) {
-       book _book = getBookbyId(id);
-       _book.setAvaibility(false);
+        book _book = getBookbyId(id);
+        _book.setAvaibility(false);
     }
+
+    public boolean isAvailable(Long id) {
+        book _book = getBookbyId(id);
+        return _book.getAvaibility();
+
+    }   
 
 }

@@ -51,5 +51,12 @@ public class bookController {
     public book getBookbyID(@PathVariable Long id) {
         return bookservice.getBookbyId(id);
     }
+
+    @GetMapping("/id}/getAvaibility{")
+    public boolean getAvaibility(@PathVariable Long id) {
+        return bookservice.isAvailable(id);
+    }
+
+
     
 }
