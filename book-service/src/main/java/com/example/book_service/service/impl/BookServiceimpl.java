@@ -32,4 +32,9 @@ public class BookServiceimpl implements BookService {
         _bookRepository.deleteById(id);
     }
 
+    public void borrowBook(Long id) {
+       book _book = getBookbyId(id);
+       _book.setAvaibility(false);
+    }
+
 }

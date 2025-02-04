@@ -30,6 +30,13 @@ public class bookController {
         return bookservice.addBook(_book);
     }
 
+    @PostMapping("/borrow")
+    public void borrowBook(@RequestBody Long id) {
+
+        bookservice.borrowBook(id);
+    }
+    
+
     @DeleteMapping("/{id}")
     public void deletebook(@PathVariable Long id) {
         bookservice.deleteBook(id);

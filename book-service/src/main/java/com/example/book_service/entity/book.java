@@ -14,7 +14,7 @@ public class book {
     private String title;
     private String author;
     private String category;
-    private boolean isAvailable;
+    private boolean isAvailable = true;
 
     public Long getId() {
         return id;

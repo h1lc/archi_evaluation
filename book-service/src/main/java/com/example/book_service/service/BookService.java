@@ -13,5 +13,7 @@ public interface BookService {
     public void deleteBook(Long id);
 
     public List<book> getAllBooks();
+    
+    public void borrowBook(Long id);
 
 }
