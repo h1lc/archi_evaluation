@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 
-// J'ai implementer la factory comme design pattern pour les deux type de user existant(Regular ou Premium)
+//  implementer la factory comme design pattern pour les deux type de user existant(Regular ou Premium)
 public class user {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
