@@ -15,9 +15,62 @@ public class user {
     private String name;
     private String email;
     private Enum membershipType; // Regular, Premium
-    private boolean isLocked;
+    private boolean isLocked = false;
     private Integer nombreMaxEmprunt;
 
+    public Long getId()
+    {
+        return id;
+    }
 
+    public String getName()
+    {
+        return name;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public Enum getMemberShipType()
+    {
+        return membershipType;
+    }
+
+    public boolean getLock()
+    {
+        return isLocked;
+    }
+
+    public Integer getNombreMaxEmprunt()
+    {
+        return nombreMaxEmprunt;
+    }
+
+    public void SetEmail(String Email)
+    {
+        email = Email;
+    }
+
+    public void SetId(Long Id)
+    {
+        id = Id;
+    }
+
+    public void SetName(String Name)
+    {
+        name = Name;
+    }
+
+    public void SetNombreMaxEmprunt(Integer a)
+    {
+        nombreMaxEmprunt = a;
+    }
+
+    public void setLocker(boolean lock)
+    {
+        isLocked = lock;
+    }
 
 }
